@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181717;
+}
+
+
+.face {
+    background: rgb(235,208,190);
+    background: radial-gradient(circle at center, rgba(246, 235, 227, 0.986) 0%, rgb(187, 136, 103) 96%);
+    height: 25em;
+    width: 25em;
+    border-radius: 45% 45% 45% 46% / 33% 32% 51% 53% ;
+}
+
+.position {
+    display: flex;
+}
+.eyebrows-left {
+    background-color: #494141;
+    height: 3.5em;
+    width: 6em;
+    clip-path: polygon(44% 7%, 100% 32%, 48% 29%, 0 59%);
+    transform: translate(70%, 180%) rotate(-3deg);
+}
+
+.eyebrows-right {
+    background-color: #494141;
+    height: 3.5em;
+    width: 6em;
+    margin-left: 2rem;
+    clip-path: polygon(44% 7%, 100% 51%, 41% 27%, 0 34%);
+    transform:  translate(100%, 180%) rotate(2deg);
+}
+
+.shadow-left {
+    filter: drop-shadow(20px -12px 15px #995b32ab);
+}
+.shadow-right {
+    filter: drop-shadow(-20px -10px 15px #995b32ab);
+}
+.eyes {
+    background-color: whitesmoke;
+    height: 6em;
+    width: 6em;
+    margin-right: 3rem;
+    clip-path: ellipse(50% 30% at 50% 30%);
+    transform:  translate(80%, 105%);
+    
+}
+.eye-line {
+    position: relative;
+    background-color: #181717;
+    height: 3em;
+    width: 6em;
+    clip-path: polygon(52% 1%, 77% 10%, 100% 35%, 73% 14%, 54% 8%, 41% 10%, 28% 16%, 17% 21%, 0% 35%, 21% 11%);
+    transform:  translate(-2%, -4%);
+    z-index: 5;
+}
+.iris {
+    position: relative;
+    background: rgb(195,139,102);
+    border: 2px solid #625050;
+    background: radial-gradient(circle at bottom right, rgb(245, 201, 172) 20%, rgb(46, 34, 34) 75%);
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    transform: translate(15px, -165%);
+    
+}
+
+.iris-inner {
+    position: relative;
+    background:black;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    transform: translate(27px, -140%);
+    z-index: 1;
+}
+
+.iris-light {
+    position: relative;
+    background:whitesmoke;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    transform: translate(30px, -220%);
+    z-index: 5;
+}
+
+.position-other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nose {
+    height: 3em;
+    width: 2em;
+    border-radius: 70% 70% 50% 50%;
+    background: radial-gradient(circle at top, rgba(248, 227, 213, 0.986) 40%, rgb(214, 157, 119) 100%);
+    filter: drop-shadow(4px 8px 2px #995b32ab);
+    transform: translate(-105px, 245%);
+}
+
+.up-lip {
+    height: 10em;
+    width: 10em;
+    background: linear-gradient(rgba(134, 91, 91, 0.986) 22%, rgb(241, 211, 193) 70%);
+    clip-path: polygon(11% 52%, 35% 42%, 47% 46%, 59% 41%, 85% 53%);
+    transform: translate(-195px, 120%);
+}
+
+.down-lip{
+    height: 10em;
+    width: 10em;
+    background: radial-gradient(circle at center, rgb(241, 211, 193) 0%, rgba(160, 111, 111, 0.76) 70%);
+    clip-path: polygon(11% 52%, 32% 62%, 45% 64%, 59% 63%, 85% 53%);
+    transform: translate(-355px, 120%);
+
+}
+
+.up-lip-shadow {
+    
+    filter: drop-shadow(-1px 1px 2px #6e4428de);
+    
+}
+.down-lip-shadow {
+    
+    filter: drop-shadow(-1px 2px 5px #995b32f1);
+    
+}
+.face-down-shadow {
+    
+    filter: drop-shadow(-1px 10px 5px #1a1613de);
+    z-index: -2;
+}
+/* .back-hair-one {
+    height: 20em;
+    width: 28em;
+    background-color: #493535;
+    background: radial-gradient(circle at top,rgba(143, 107, 107, 0.986) 2%, rgb(56, 36, 23) 40%);
+    clip-path: polygon(50% 3%, 80% 10%, 88% 53%, 74% 35%, 61% 53%, 47% 34%, 33% 53%, 22% 35%, 8% 53%, 20% 10%);
+    transform: translate(-650px, 65%) skew(10deg, -2deg) rotateY(180deg);
+    z-index: -1;
+} */
+
+/* 
+.back-hair-four {
+    height: 30em;
+    width: 20em;
+    background-color: #493535;
+    background: radial-gradient(circle at top,rgba(143, 107, 107, 0.986) 2%, rgb(56, 36, 23) 40%);
+    clip-path: polygon(72% 13%, 52% 45%, 48% 78%, 45% 100%, 26% 72%, 27% 50%, 37% 22%, 73% 10%);
+    transform: translate(-1220px, -10%) skew(10deg, -20deg);
+    z-index: 1;
+}
+.back-hair-five {
+    height: 30em;
+    width: 20em;
+    background-color: #493535;
+    background: radial-gradient(circle at top,rgba(143, 107, 107, 0.986) 2%, rgb(56, 36, 23) 40%);
+    clip-path: polygon(72% 13%, 52% 45%, 48% 78%, 45% 100%, 26% 72%, 27% 60%, 47% 24%, 73% 10%);
+    transform: translate(-1220px, -15%) skew(-10deg, -10deg) rotateY(180deg);
+    z-index: 1;
+}
+.back-hair-six {
+    height: 12em;
+    width: 27em;
+    background-color: #493535;
+    background: radial-gradient(circle at top,rgba(143, 107, 107, 0.986) 2%, rgb(56, 36, 23) 40%);
+    clip-path: polygon(50% 3%, 80% 10%, 88% 53%, 74% 35%, 61% 53%, 47% 34%, 33% 53%, 22% 35%, 8% 53%, 20% 10%);
+    transform: translate(-1755px, -98%) skew(10deg, -2deg) rotateY(180deg);
+    z-index: 1;
+} */
+
+.move-eyes {
+    animation: linear infinite alternate;
+    animation-name: run;
+    animation-duration: 1s;
+    }
+    @keyframes run {
+        0% {
+        left: 0;
+        transform: translateX(0);
+        }
+        100% {
+        left: -20%;
+        transform: translateX(10%);
+        }
+}
+
